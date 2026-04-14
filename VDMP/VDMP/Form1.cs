@@ -49,10 +49,16 @@ namespace VDMP
 
 
             ToolTip myToolTip = new ToolTip();
-            myToolTip.SetToolTip(backToPreviousDesktop, "Back to previous desktop");
+            myToolTip.SetToolTip(backToPreviousDesktop, "Back to previous desktop: Ctrl + Win + B");
 
             ToolTip myToolTip2 = new ToolTip();
             myToolTip2.SetToolTip(minimalToggleBtn, "Minimal View - Toggle");
+
+            ToolTip myToolTip3 = new ToolTip();
+            myToolTip2.SetToolTip(leftDesktopSwitch, "Left");
+
+            ToolTip myToolTip4 = new ToolTip();
+            myToolTip2.SetToolTip(rightDesktopSwitch, "Right");
 
             HotkeyManager.Current.AddOrReplace("BackToPreviousDesktop", ModKeys.Control | ModKeys.Windows | Keys.B, OnBackHotkeyPress);
 
